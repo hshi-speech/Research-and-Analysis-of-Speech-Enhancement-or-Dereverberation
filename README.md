@@ -70,7 +70,8 @@ What features are used and how they are handled will be explained in the followi
 
 
 ## 3. Deep learning-based speech enhancement (dereverberation) methods
-
+In section 1.2, I give the classification of speech enhancement, and their basic framework is as follows:  
+![](https://github.com/hshi-cca/Research-and-Analysis-of-Speech-Enhancement-or-Dereverberation/blob/master/saving/github-pic.png)
 
 
 
