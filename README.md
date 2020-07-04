@@ -16,8 +16,8 @@ My email: hshi.cca@gmail.com, hshi_cca@tju.edu.cn (I will not be able to use thi
 >> 1.1 What is speech enhancement (dereverberation)  
 >> 1.2 Classification of speech enhancement (dereverberation)  
 > 2. Traditional speech enhancement or dereverberation methods (I will show this part in the future.)  
-> 3. Deep learning-based speech enhancement or dereverberation methods
->> 3.1 Basic framework and classification  
+> 3. Deep learning-based speech enhancement (dereverberation) methods
+>> 3.1 Basic framework    
 >> 3.2 Frequency domain speech enhancement (dereverberation)
 >>> 3.2.1 Strategy of research
 >>> 3.2.2 
