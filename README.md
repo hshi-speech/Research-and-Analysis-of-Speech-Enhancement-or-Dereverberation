@@ -59,9 +59,10 @@ Combined with the above, I roughly classify speech enhancement：
   * Time domain based speech enhancement  
 
 
+## 2. Traditional speech enhancement or dereverberation methods (I will show this part in the future.)
 
 
-
+## 3. Deep learning-based speech enhancement (dereverberation) methods
 
 
 
