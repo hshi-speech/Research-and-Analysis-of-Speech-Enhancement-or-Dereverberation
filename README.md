@@ -79,5 +79,8 @@ What features are used and how they are handled will be explained in the followi
 
 
 
+## 7. Acknowledge  
+Up to now, in the course of one and a half years of study, I would like to thank my tutors, Prof. Wang (Longbiao Wang. Tianjin University, China) and Li (Sheng Li. National Institute of Information and Communications Technology (NICT), Japan), and the senior brother of the laboratory doctor, Meng Ge (Tianjin University, China) for their guidance and care for me over the past year and a half. 
+
 
 
