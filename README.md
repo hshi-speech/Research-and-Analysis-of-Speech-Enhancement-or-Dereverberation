@@ -42,9 +42,31 @@ The speech enhancement system wants to recover $s$ from $x$.
 Besides, some people think that it is necessary to remove the additive noise and reverberation[2] at the same time, but others think it is necessary to remove them separately[3]. Therefore, there is no definite conclusion at present. But I prefer to remove additive noise and reverberation separately (`Personal opinion, for reference only`). 
 
 <b>References:</b>  
-[1] [E.A.P. Habets. Room impulse response generator[J]. Technische Universiteit Eindhoven, Tech. Rep, 2006, 2(2.4): 1.](https://www.researchgate.net/profile/Emanuel_Habets/publication/259991276_Room_Impulse_Response_Generator/links/5800ea5808ae1d2d72eae2a0/Room-Impulse-Response-Generator.pdf) 
-[2] [K. Han, Y. Wang, D. Wang, et al. Learning spectral mapping for speech dereverberation and denoising[J]. IEEE/ACM TASLP, 2015, 23(6): 982-992.](http://web.cse.ohio-state.edu/~wang.77/papers/HWWWMZ.taslp15.pdf)
-[3] [Y. Zhao, Z. Wang, D. Wang. A two-stage algorithm for noisy and reverberant speech enhancement[C]//2017 IEEE ICASSP. IEEE, 2017: 5580-5584.](http://150.162.46.34:8080/icassp2017/pdfs/0005580.pdf)
+[1] [E.A.P. Habets. Room impulse response generator[J]. Technische Universiteit Eindhoven, Tech. Rep, 2006, 2(2.4): 1.](https://www.researchgate.net/profile/Emanuel_Habets/publication/259991276_Room_Impulse_Response_Generator/links/5800ea5808ae1d2d72eae2a0/Room-Impulse-Response-Generator.pdf)  
+[2] [K. Han, Y. Wang, D. Wang, et al. Learning spectral mapping for speech dereverberation and denoising[J]. IEEE/ACM TASLP, 2015, 23(6): 982-992.](http://web.cse.ohio-state.edu/~wang.77/papers/HWWWMZ.taslp15.pdf)  
+[3] [Y. Zhao, Z. Wang, D. Wang. A two-stage algorithm for noisy and reverberant speech enhancement[C]//2017 IEEE ICASSP. IEEE, 2017: 5580-5584.](http://150.162.46.34:8080/icassp2017/pdfs/0005580.pdf)  
+
+### 1.2 Classification of speech enhancement (dereverberation)  
+In fact, I prefer to refer to those models that need to restore speech signal for human auditory perception as speech enhancement. Those for other tasks, such as automatic speech recognition (ASR) or speaker recognition, are called <b>feature enhancement</b>. Feature enhancement is to design the input and output of the model for a specific task, and does not need to be reconstructed to speech signal.  `So in this git, our speech enhancement (dereverberation) models are all for human auditory perception experiences.`  
+
+According to methods, speech enhancement can be divided into traditional speech enhancement and deep learning (machine learning) based speech enhancement. 
+Traditional speech enhancement methods need to rely on some assumptions. When dealing with the non-stationary features, the performance will degrade greatly, and some new distortion and noise will be introduced, such as music noise. 
+With the continuous improvement of the method and the increase of computing resources, deep learning (machine learning) based speech enhancement shows stronger performance. 
+Combined with the above, I roughly classify speech enhancement：  
+* Traditional speech enhancement  
+* Deep learning (machine learning) based speech enhancement  
+  * Frequency domain based speech enhancement  
+  * Time domain based speech enhancement  
+
+
+
+
+
+
+
+
+
+
 
 
 
