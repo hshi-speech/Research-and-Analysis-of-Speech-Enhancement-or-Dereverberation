@@ -1,2 +1,2 @@
-# Research-and-Analysis-of-Speech-Enhancement-or-Dereverberation (RA-SED)
+# Research-and-Analysis-of-Speech-Enhancement-or-Dereverberation (`RA-SED`)
 This repository contains some material of speech enhancement and dereverberation. On the one hand, I summarize this work for my further understanding. On the other hand, I hope that all beginners or masters interested in speech enhancement can ask me questions and make progress together. A lot of my summary is not very good, I hope you put forward corrections! 
