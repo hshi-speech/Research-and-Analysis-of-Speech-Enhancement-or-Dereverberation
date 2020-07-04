@@ -50,13 +50,20 @@ Besides, some people think that it is necessary to remove the additive noise and
 In fact, I prefer to refer to those models that need to restore speech signal for human auditory perception as speech enhancement. Those for other tasks, such as automatic speech recognition (ASR) or speaker recognition, are called <b>feature enhancement</b>. Feature enhancement is to design the input and output of the model for a specific task, and does not need to be reconstructed to speech signal.  `So in this git, our speech enhancement (dereverberation) models are all for human auditory perception experiences.`  
 
 According to methods, speech enhancement can be divided into traditional speech enhancement and deep learning (machine learning) based speech enhancement. 
-Traditional speech enhancement methods need to rely on some assumptions. When dealing with the non-stationary features, the performance will degrade greatly, and some new distortion and noise will be introduced, such as music noise. 
+Traditional speech enhancement methods need to rely on some assumptions. When dealing with the non-stationary features, the performance will degrade greatly, and some new distortion and noise will be introduced, such as music noise[4]. 
 With the continuous improvement of the method and the increase of computing resources, deep learning (machine learning) based speech enhancement shows stronger performance. 
 Combined with the above, I roughly classify speech enhancement：  
 * Traditional speech enhancement  
 * Deep learning (machine learning) based speech enhancement  
   * Frequency domain based speech enhancement  
   * Time domain based speech enhancement  
+  
+In frequency domain speech enhancement, Fourier transform (e.g., short-time fourier transform, STFT) is used to transform time domain signal into frequency domain representation. 
+While for time domain speech enhancement, waveform signals are directly used. 
+What features are used and how they are handled will be explained in the following introduction.  
+
+<b>References:</b>  
+[4] [A. Hussain, M. Chetouani, S. Squartini, et al. Nonlinear speech enhancement: An overview[M]//Progress in nonlinear speech processing. Springer, Berlin, Heidelberg, 2007: 217-248.](https://d1wqtxts1xzle7.cloudfront.net/30803852/Yannis_Stylianou_Progress_in_Nonlinear_Speech_P.pdf?1362353818=&response-content-disposition=inline%3B+filename%3DSpectral_analysis_of_speech_signals_usin.pdf&Expires=1593847717&Signature=XMqllmmYJErenzsb7pqXiGPRTnLEv2yYJriPbclTqJ02mqEr5s9K~nTEz1tsFemydhL3be6vYfNFelkSfF4wge-7TwXCNO-oo1bVVxSDavXSIo52Qb~ZDI3BSeejq6PupXF5c9i7tzJ5vIubGYb9mk2k72MSPtqPATkiQqUFFNA9R9XvOuCRgABIS-gxQzQf~X4Jz~7yoN~4e7T0-ihEws0-h9qBnDjTPUh0afz2XKpSaekJMtH0Mo7OE8MEKaU8o8gudSSeG01PlvhQOzNDhsu1~GYNu4rkOM2qKTkQ12y3mZ1CER9mMCx-jQmY0XcQIEJADZhzaq4~QluGGtGS~w__&Key-Pair-Id=APKAJLOHF5GGSLRBV4ZA#page=227)  
 
 
 ## 2. Traditional speech enhancement or dereverberation methods (I will show this part in the future.)
