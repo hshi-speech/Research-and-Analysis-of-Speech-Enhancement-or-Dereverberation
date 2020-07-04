@@ -123,12 +123,14 @@ In fact, this part should be combined with 3.2.1 to say what features need to be
 [[7]](https://arxiv.org/pdf/1703.07172.pdf) shows that some complimentary features can improve the enhancement performance. 
 In recently years, adding some symbol information [[12]](https://arxiv.org/pdf/1904.13142.pdf) and text information[[13]](http://www.kecl.ntt.co.jp/icl/signal/kinoshita/publications/Interspeech15/IS150674.pdf) to the network can improve the performance of speech enhancement.  
 
-Besides, there are other information that can help improve the performance of speech enhancement, and I will continue to add it.  
+Besides, it is also necessary to select whether frame-level[[6]](http://staff.ustc.edu.cn/~jundu/Publications/publications/SPL2014_Xu.pdf) features or utterance-level features[[18]](https://www.researchgate.net/profile/Ke_Tan6/publication/325542192_A_Convolutional_Recurrent_Neural_Network_for_Real-Time_Speech_Enhancement/links/5b91955292851c78c4f3d317/A-Convolutional-Recurrent-Neural-Network-for-Real-Time-Speech-Enhancement.pdf) are needed, and whether or not frame expansion[[6]](http://staff.ustc.edu.cn/~jundu/Publications/publications/SPL2014_Xu.pdf) is needed and how many frames are spliced.
+
+Moreover, there are other information that can help improve the performance of speech enhancement, and I will continue to add it.  
 
 <b>References:</b>  
 [12] [C. Liao, Y. Tsao, X. Lu, et al. Incorporating symbolic sequential modeling for speech enhancement[J]. arXiv preprint arXiv:1904.13142, 2019.](https://arxiv.org/pdf/1904.13142.pdf)  
 [13] [K. Kinoshita, M. Delcroix, A. Ogawa, et al. Text-informed speech enhancement with deep neural networks[C]//Sixteenth Annual Conference of the International Speech Communication Association. 2015.](http://www.kecl.ntt.co.jp/icl/signal/kinoshita/publications/Interspeech15/IS150674.pdf)  
-
+[18] [K. Tan, D. Wang. A Convolutional Recurrent Neural Network for Real-Time Speech Enhancement[C]//Interspeech. 2018: 3229-3233.](https://www.researchgate.net/profile/Ke_Tan6/publication/325542192_A_Convolutional_Recurrent_Neural_Network_for_Real-Time_Speech_Enhancement/links/5b91955292851c78c4f3d317/A-Convolutional-Recurrent-Neural-Network-for-Real-Time-Speech-Enhancement.pdf)  
 
 #### 3.2.3 Phase module  
 After a long time of research, researchers found that phase information is also important[[14]](https://maxwell.ict.griffith.edu.au/spl/publications/papers/spcom11_phase_enhance.pdf) for speech enhancement. 
