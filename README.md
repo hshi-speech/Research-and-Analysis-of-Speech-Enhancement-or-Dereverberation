@@ -28,7 +28,8 @@ My email: hshi.cca@gmail.com, hshi_cca@tju.edu.cn (I will not be able to use thi
 || ------ 4. Public datasets  
 || ------ 5. Performance comparison  
 || ------ 6. Future trends  
-|| ------ 7. Acknowledge  
+|| ------ 7. Speech signal processing group for worthy attention 
+|| ------ 8. Acknowledge  
 
 
 ## 1. Overviews
@@ -105,7 +106,7 @@ Besides, considering the influence of phase to speech enhancement, the complex i
 In addition to Fourier transform, other transform methods, such as Z-transform, will also be used in feature extraction of speech enhancement. 
 Different filter banks have great influence on feature extraction.  
 
-Whether to normalize the features, and how to normalize the features, I will sort them out and improve them continuously!  
+Whether to normalize the features, and how to normalize the features, especially for those MTL models, I will sort them out and improve them in the future work!  
 
 <b>References:</b>  
 [5] [X. Lu, Y. Tsao, S. Matsuda, et al. Speech enhancement based on deep denoising autoencoder[C]//Interspeech. 2013, 2013: 436-440.](https://bio-asplab.citi.sinica.edu.tw/paper/conference/lu2013speech.pdf)  
@@ -118,16 +119,22 @@ Whether to normalize the features, and how to normalize the features, I will sor
 ](https://merl.com/publications/docs/TR2015-031.pdf)  
 
 #### 3.2.2 Inputs module  
+In fact, this part should be combined with 3.2.1 to say what features need to be input to improve the performance of our speech enhancement system. 
+[[7]](https://arxiv.org/pdf/1703.07172.pdf) shows that some complimentary features can improve the enhancement performance. 
+In recently years, adding some symbol information [[12]](https://arxiv.org/pdf/1904.13142.pdf) and text information[[13]](http://www.kecl.ntt.co.jp/icl/signal/kinoshita/publications/Interspeech15/IS150674.pdf) to the network can improve the performance of speech enhancement.  
 
+Besides, there are other information that can help improve the performance of speech enhancement, and I will continue to add it.  
 
+<b>References:</b>  
+[12] [C. Liao, Y. Tsao, X. Lu, et al. Incorporating symbolic sequential modeling for speech enhancement[J]. arXiv preprint arXiv:1904.13142, 2019.](https://arxiv.org/pdf/1904.13142.pdf)  
+[13] [K. Kinoshita, M. Delcroix, A. Ogawa, et al. Text-informed speech enhancement with deep neural networks[C]//Sixteenth Annual Conference of the International Speech Communication Association. 2015.](http://www.kecl.ntt.co.jp/icl/signal/kinoshita/publications/Interspeech15/IS150674.pdf)  
 
-<b>References:</b> 
 
 #### 3.2.3 Phase module  
 Besides, considering the inconsistency between the enhanced spectrogram and the noisy phase when inverse STFT (ISTFT)[[]](https://arxiv.org/pdf/1811.08521.pdf), 
 
 
-<b>References:</b> 
+<b>References:</b>   
 [] [](https://arxiv.org/pdf/1811.08521.pdf)
 
 
@@ -136,18 +143,18 @@ Besides, considering the inconsistency between the enhanced spectrogram and the 
 
 
 
-<b>References:</b> 
+<b>References:</b>   
 
 #### 3.2.5 Post-processing module
 
 
-<b>References:</b> 
+<b>References:</b>  
 
 ### 3.2 Time domain speech enhancement (dereverberation)  
 
 
 
-<b>References:</b> 
+<b>References:</b>  
 
 ## 4. Public datasets  
 
@@ -157,12 +164,12 @@ Besides, considering the inconsistency between the enhanced spectrogram and the 
 ## 5. Performance comparison  
 
 
-<b>References:</b> 
+<b>References:</b>  
 
 ## 6. Future trends  
 
 
-## 7. Acknowledge  
+## 8. Acknowledge  
 Up to now, in the course of one and a half years of study, I would like to thank my tutors, Prof. Wang (Longbiao Wang. Tianjin University, China.) and Li (Sheng Li. National Institute of Information and Communications Technology (NICT), Japan.), Prof. Dang (Jianwu Dang. Tianjin University, China.), and the senior brother of the laboratory doctor, Meng Ge (Tianjin University, China) for their guidance and care for me. 
 I hope I can successfully apply for a doctorate degree, and have the opportunity to discuss voice enhancement or other voice direction with you! 
 
