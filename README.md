@@ -75,7 +75,9 @@ In section 1.2, I give the classification of speech enhancement, and their basic
 ![](https://github.com/hshi-cca/Research-and-Analysis-of-Speech-Enhancement-or-Dereverberation/blob/master/saving/github-pic.png)  
   
 `In fact, each module in the diagram has no clear name. We are here to introduce the work more conveniently, so we give each part a name. (don't spray if you don't like it)` 
-According to my experience, speech enhancement in frequency domain is divided into four modules, while speech enhancement in time domain is divided into three modules.  
+According to my experience, speech enhancement in frequency domain is divided into four modules, while speech enhancement in time domain is divided into three modules. 
+That is because I feel that the current speech enhancement, we are generally improve the performance from these parts. 
+I have been focusing on speech enhancement for about a year and a half. Of course, there are some models that I have not paid attention to. Please put forward your correction by email.  
 
 
 
