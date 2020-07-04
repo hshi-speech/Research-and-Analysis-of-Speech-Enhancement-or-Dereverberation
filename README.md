@@ -12,22 +12,23 @@ My email: hshi.cca@gmail.com, hshi_cca@tju.edu.cn (I will not be able to use thi
 `
 
 ## 0. Outlines
-> 1. Overviews
->> 1.1 What is speech enhancement (dereverberation)  
->> 1.2 Classification of speech enhancement (dereverberation)  
-> 2. Traditional speech enhancement or dereverberation methods (I will show this part in the future.)  
-> 3. Deep learning-based speech enhancement (dereverberation) methods
->> 3.1 Basic framework  
->> 3.2 Frequency domain speech enhancement (dereverberation)  
->>> 3.2.1 Feature extraction module  
->>> 3.2.2 Inputs module  
->>> 3.2.3 Phase module  
->>> 3.2.4 Enhancement module    
->> 3.3 Time domain speech enhancement (dereverberation)  
-> 4. Public datasets  
-> 5. Performance  
-> 6. Future trends  
-> 7. Acknowledge  
+|| ------ 1. Overviews
+|| ------------ 1.1 What is speech enhancement (dereverberation)  
+|| ------------ 1.2 Classification of speech enhancement (dereverberation)  
+|| ------ 2. Traditional speech enhancement or dereverberation methods (I will show this part in the future.)  
+|| ------ 3. Deep learning-based speech enhancement (dereverberation) methods
+|| ------------ 3.1 Basic framework  
+|| ------------ 3.2 Frequency domain speech enhancement (dereverberation)  
+|| ------------------ 3.2.1 Feature extraction module  
+|| ------------------ 3.2.2 Inputs module  
+|| ------------------ 3.2.3 Phase module  
+|| ------------------ 3.2.4 Enhancement module  
+|| ------------------ 3.2.5 Post-processing module
+|| ------------ 3.3 Time domain speech enhancement (dereverberation)  
+|| ------ 4. Public datasets  
+|| ------ 5. Performance  
+|| ------ 6. Future trends  
+|| ------ 7. Acknowledge  
 
 
 ## 1. Overviews
