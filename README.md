@@ -158,17 +158,24 @@ Moreover, phase information can also be used or even predicted through the netwo
 [17] [D. Yin, C. Luo, Z. Xiong, et al. PHASEN: A Phase-and-Harmonics-Aware Speech Enhancement Network[C]//AAAI. 2020: 9458-9465.](https://www.aaai.org/Papers/AAAI/2020GB/AAAI-YinD.3057.pdf)  
 
 #### 3.2.4 Enhancement module  
+<b>Improvement of Neural Network</b>  
 The choice of model is very important. From the beginning of DNN[[6]](http://staff.ustc.edu.cn/~jundu/Publications/publications/SPL2014_Xu.pdf), to CNN[[19]](https://arxiv.org/pdf/1609.07132.pdf) and RNN[[20]](http://home.ustc.edu.cn/~sunlei17/pdf/MULTIPLE-TARGET.pdf), the model is gradually powerful, and the performance of speech enhancement is also improving. 
 The combination of different networks also has a good effect[[21]](https://www.isca-speech.org/archive/Interspeech_2019/pdfs/1477.pdf). 
+
+<b>Design of Network Structure</b>  
 U-NET structure[[22]](https://openreview.net/pdf?id=SkeRTsAcYm) has been proved to be effective in many tasks. 
 By using the idea of generation and confrontation, generative adversarial network (GAN)[[23]](https://ieeexplore.ieee.org/abstract/document/8462068) uses the discriminator to judge the effect of the generator, and by introducing some information of the discriminator, to a certain extent, it can alleviate the defect that mean squared error (MSE) as a loss function may not be suitable for human hearing. 
+
+<b>Loss Function</b>  
 In order to be more suitable for human hearing, some speech enhancement systems also use evaluation index as loss function, e.g., short-time objective intelligibility (STOI)[[24]](https://arxiv.org/pdf/1802.00604.pdf), [[25]](https://cliffzhao.github.io/Publications/ZXGZ.icassp18.pdf). 
 Noise (domain) information can be used in the model in the form of loss[[36]](https://arxiv.org/pdf/1807.07501.pdf).  
 
+<b>Attention Mechanism</b>
 The attention mechanism[[26]](https://papers.nips.cc/paper/7181-attention-is-all-you-need.pdf) is becoming more and more common, and the attention-based approach
 has better generalization ability to unseen noise conditions[[27]](http://www.npu-aslp.org/lxie/papers/2019ICASSP-XiangHao.pdf). 
 Besides, different researcheres use the attention mechanism to model different units, e.g., [[28]](https://arxiv.org/pdf/2001.11542.pdf) use attention mechanism to model different signal channels.  
 
+<b>Training Strategy</b>  
 Considering some characteristics of the network, training or designing some structures can improve the enhanced performance. 
 Transfer learning[[29]](http://staff.ustc.edu.cn/~jundu/The%20team/yongxu/demo/pdfs/Yong_ISCSLP2014.pdf) can improve the performance of the model on small databases by training on large databases and fine tuning on small databases. 
 In the way of multi-target learning (MTL) and combining various features, e.g., mel-frequency cepstral coefficients (MFCC), as input and output, the network can also achieve good results[[7]](https://arxiv.org/pdf/1703.07172.pdf). 
@@ -176,9 +183,11 @@ Different networks are trained according to different SNR[[30]](https://www.rese
 [[31]](http://150.162.46.34:8080/icassp2018/ICASSP18_USB/pdfs/0005054.pdf) uses progressive learning to enhance the results step by step. 
 The stacking of networks[[32]](https://web.cse.ohio-state.edu/~wang.77/papers/Wang-Wang1.icassp17.pdf) also shows the effect.  
 
+<b>Fusion Strategy</b>  
 Moerover, masking and mapping approaches show different effects on different scenarios, which shows some complementary. [[33]](https://ieeexplore.ieee.org/abstract/document/9054661/) proposes minimum difference masks to utilize this complementary, and fuses the spectrograms. 
 [[34]](https://arxiv.org/pdf/1812.08914.pdf) fuses the enhanced signal in time domain and enhanced signal in frequency domain, which also showed the effect.  
 
+<b>Mutual Enhancement</b>  
 The combination of enhancement task and other tasks can enhance each other. 
 The phonetic posteriorgrams (PPG) shows a certain correlation with enhancement[[35]](https://ieeexplore.ieee.org/abstract/document/9054334). 
 
