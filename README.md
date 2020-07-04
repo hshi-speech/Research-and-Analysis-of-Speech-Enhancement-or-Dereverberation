@@ -80,7 +80,7 @@ What features are used and how they are handled will be explained in the followi
 
 
 ## 7. Acknowledge  
-Up to now, in the course of one and a half years of study, I would like to thank my tutors, Prof. Wang (Longbiao Wang. Tianjin University, China.) and Li (Sheng Li. National Institute of Information and Communications Technology (NICT), Japan.), Prof. Dang (Jianwu Dang. Tianjin University, China.) and the senior brother of the laboratory doctor, Meng Ge (Tianjin University, China) for their guidance and care for me. 
+Up to now, in the course of one and a half years of study, I would like to thank my tutors, Prof. Wang (Longbiao Wang. Tianjin University, China.) and Li (Sheng Li. National Institute of Information and Communications Technology (NICT), Japan.), Prof. Dang (Jianwu Dang. Tianjin University, China.), and the senior brother of the laboratory doctor, Meng Ge (Tianjin University, China) for their guidance and care for me. 
 I hope I can successfully apply for a doctorate degree, and have the opportunity to discuss voice enhancement or other voice direction with you! 
 
 
