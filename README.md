@@ -92,20 +92,22 @@ I divide it into five modules.
 I will show you how to improve the frequency domain speech enhancement algorithm from these five parts.  
 
 #### 3.2.1 Feature extraction module  
+<b>Input Feature</b>  
 The input feature is very important to the learning of neural network. 
-Mel frequency power spectrum (MFP) was used for speech enhancement in INTERSPEECH 2013 [[5]](https://bio-asplab.citi.sinica.edu.tw/paper/conference/lu2013speech.pdf). 
-At present, the most common feature is the magnitude of spectrogram. Log processing of the magnitude of spectrogram[[6]](http://staff.ustc.edu.cn/~jundu/Publications/publications/SPL2014_Xu.pdf) is more suitable for human hearing. 
+<b>Mel frequency power spectrum (MFP)</b> was used for speech enhancement in INTERSPEECH 2013 [[5]](https://bio-asplab.citi.sinica.edu.tw/paper/conference/lu2013speech.pdf). 
+At present, the most common feature is <b>the magnitude of spectrogram</b>. <b>Log processing of the magnitude of spectrogram</b>[[6]](http://staff.ustc.edu.cn/~jundu/Publications/publications/SPL2014_Xu.pdf) is more suitable for human hearing. 
+Moreover, in the way of multi-target learning (MTL) and combining various features, e.g., <b>mel-frequency cepstral coefficients (MFCC)</b>, as input and output, the network can also achieve good results[[7]](https://arxiv.org/pdf/1703.07172.pdf).  
+
+<b>Learning Targets</b>  
 Using the nonlinear mapping ability of neural network, we can map the spectrum directly, which is called mapping approach. 
 Masking approach is another common learning targets for speech enhancement. 
-Ideal binary mask (IBM)[[9]](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4293540/) and ideal ratio mask (IRM)[[9]](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4293540/) are common masking approaches based on the computational auditory scene analysis (CASA)[[8]](https://ieeexplore.ieee.org/document/4429320?denied=) theory. 
+<b>Ideal binary mask (IBM)</b>[[9]](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4293540/) and <b>ideal ratio mask (IRM)</b>[[9]](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4293540/) are common masking approaches based on the computational auditory scene analysis (CASA)[[8]](https://ieeexplore.ieee.org/document/4429320?denied=) theory.  
 
-Moreover, in the way of multi-target learning (MTL) and combining various features, e.g., mel-frequency cepstral coefficients (MFCC), as input and output, the network can also achieve good results[[7]](https://arxiv.org/pdf/1703.07172.pdf).  
+Besides, considering the influence of phase to speech enhancement, the <b>complex ideal ratio mask (cIRM)<\b>[[10]](http://homes.sice.indiana.edu/williads/publication_files/williamsonetal.cRM.ICASSP2016.pdf) and the <b>phase-sensitive spectrum approximation (PSA)</b>[[11]](https://merl.com/publications/docs/TR2015-031.pdf) are also proposed and used.  
 
-Besides, considering the influence of phase to speech enhancement, the complex ideal ratio mask (cIRM)[[10]](http://homes.sice.indiana.edu/williads/publication_files/williamsonetal.cRM.ICASSP2016.pdf) and the phase-sensitive spectrum approximation (PSA)[[11]](https://merl.com/publications/docs/TR2015-031.pdf) are also proposed and used.  
-
+<b>Other Feature Processing</b>  
 In addition to Fourier transform, other transform methods, such as Z-transform, will also be used in feature extraction of speech enhancement. 
-Different filter banks have great influence on feature extraction.  
-
+Different filter banks have great influence on feature extraction. 
 Whether to normalize the features, and how to normalize the features, especially for those MTL models, I will sort them out and improve them in the future work!  
 
 <b>References:</b>  
