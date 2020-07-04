@@ -72,8 +72,10 @@ What features are used and how they are handled will be explained in the followi
 ## 3. Deep learning-based speech enhancement (dereverberation) methods
 In section 1.2, I give the classification of speech enhancement, and their basic framework is as follows:  
   
-![](https://github.com/hshi-cca/Research-and-Analysis-of-Speech-Enhancement-or-Dereverberation/blob/master/saving/github-pic.png)
-
+![](https://github.com/hshi-cca/Research-and-Analysis-of-Speech-Enhancement-or-Dereverberation/blob/master/saving/github-pic.png)  
+  
+`In fact, each module in the diagram has no clear name. We are here to introduce the work more conveniently, so we give each part a name. (don't spray if you don't like it)` 
+According to my experience, speech enhancement in frequency domain is divided into four modules, while speech enhancement in time domain is divided into three modules.  
 
 
 
