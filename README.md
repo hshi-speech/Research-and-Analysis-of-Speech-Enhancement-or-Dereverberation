@@ -113,8 +113,8 @@ Whether to normalize the features, and how to normalize the features, especially
 [6] [Y. Xu, J. Du, L. Dai, et al. An experimental study on speech enhancement based on deep neural networks[J]. IEEE Signal processing letters, 2013, 21(1): 65-68.](http://staff.ustc.edu.cn/~jundu/Publications/publications/SPL2014_Xu.pdf)  
 [7] [Y. Xu, J. Du, Z. Huang, et al. Multi-objective learning and mask-based post-processing for deep neural network based speech enhancement[J]. arXiv preprint arXiv:1703.07172, 2017.](https://arxiv.org/pdf/1703.07172.pdf)  
 [8] [D. Wang, G. J. Brown. Computational auditory scene analysis: Principles, algorithms, and applications[M]. Wiley-IEEE press, 2006.](https://ieeexplore.ieee.org/document/4429320?denied=)  
-[9] [Y. Wang, A. Narayanan, D. Wang. On training targets for supervised speech separation[J]. IEEE/ACM transactions on audio, speech, and language processing, 2014, 22(12): 1849-1858.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4293540/)  
-[10] [D. S. Williamson, Y. Wang, D. Wang. Complex ratio masking for joint enhancement of magnitude and phase[C]//2016 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP). IEEE, 2016: 5220-5224.](http://homes.sice.indiana.edu/williads/publication_files/williamsonetal.cRM.ICASSP2016.pdf)  
+[9] [Y. Wang, A. Narayanan, D. Wang. On training targets for supervised speech separation[J]. IEEE/ACM TASLP, 2014, 22(12): 1849-1858.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4293540/)  
+[10] [D. S. Williamson, Y. Wang, D. Wang. Complex ratio masking for joint enhancement of magnitude and phase[C]//2016 IEEE ICASSP. IEEE, 2016: 5220-5224.](http://homes.sice.indiana.edu/williads/publication_files/williamsonetal.cRM.ICASSP2016.pdf)  
 [11] [H. Erdogan, J. R. Hershey, S. Watanabe, et al. Phase-sensitive and recognition-boosted speech separation using deep recurrent neural networks[C]//2015 IEEE ICASSP. IEEE, 2015: 708-712.
 ](https://merl.com/publications/docs/TR2015-031.pdf)  
 
@@ -131,13 +131,21 @@ Besides, there are other information that can help improve the performance of sp
 
 
 #### 3.2.3 Phase module  
-Besides, considering the inconsistency between the enhanced spectrogram and the noisy phase when inverse STFT (ISTFT)[[]](https://arxiv.org/pdf/1811.08521.pdf), 
+After a long time of research, researchers found that phase information is also important[[14]](https://maxwell.ict.griffith.edu.au/spl/publications/papers/spcom11_phase_enhance.pdf) for speech enhancement. 
+However, due to the fact that there is no fixed law of phase information and there are some problems such as phase winding, it is difficult to deal with phase information.  Therefore, in the early speech enhancement based on deep learning, only magnitude information is processed, and then the waveform is reconstructed with noisy phase. 
+Besides, considering the inconsistency between the enhanced spectrogram and the noisy phase when inverse STFT (ISTFT)[[14]](https://arxiv.org/pdf/1811.08521.pdf). 
+The simplest way to deal with phase is by iterating[[16]](http://web.cse.ohio-state.edu/~wang.77/papers/HWWWMZ.taslp15.pdf). Firstly, the enhanced amplitude information and noisy phase are used to reconstruct the waveform, and then the phase of the reconstructed waveform is extracted, and then the re extracted phase is used to reconstruct the waveform. Through repeated iterations, the effect can be improved.  
 
+PSA[[11]](https://merl.com/publications/docs/TR2015-031.pdf) can make use of the phase information and improve to a certain extent. 
+cIRM[[10]](http://homes.sice.indiana.edu/williads/publication_files/williamsonetal.cRM.ICASSP2016.pdf) and time domain speech enhancement can bypass the phase problem.  
+
+Moreover, phase information can also be used or even predicted through the network, combined with magnitude information[[17]](https://www.aaai.org/Papers/AAAI/2020GB/AAAI-YinD.3057.pdf).  
 
 <b>References:</b>   
-[] [](https://arxiv.org/pdf/1811.08521.pdf)
-
-
+[14] [S. Wisdom, J. R. Hershey, K. Wilson, et al. Differentiable consistency constraints for improved deep speech enhancement[C]//ICASSP 2019-2019 IEEE ICASSP. IEEE, 2019: 900-904.](https://arxiv.org/pdf/1811.08521.pdf)  
+[15] [K. Paliwal, K. Wójcicki, B. Shannon. The importance of phase in speech enhancement[J]. speech communication, 2011, 53(4): 465-494.](https://maxwell.ict.griffith.edu.au/spl/publications/papers/spcom11_phase_enhance.pdf)   
+[16] [K. Han, Y. Wang, D. Wang, et al. Learning spectral mapping for speech dereverberation and denoising[J]. IEEE/ACM TASLP, 2015, 23(6): 982-992.](http://web.cse.ohio-state.edu/~wang.77/papers/HWWWMZ.taslp15.pdf)  
+[17] [D. Yin, C. Luo, Z. Xiong, et al. PHASEN: A Phase-and-Harmonics-Aware Speech Enhancement Network[C]//AAAI. 2020: 9458-9465.](https://www.aaai.org/Papers/AAAI/2020GB/AAAI-YinD.3057.pdf)  
 
 #### 3.2.4 Enhancement module  
 
