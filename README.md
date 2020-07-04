@@ -99,7 +99,7 @@ At present, the most common feature is <b>the magnitude of spectrogram</b>. <b>L
 Moreover, in the way of multi-target learning (MTL) and combining various features, e.g., <b>mel-frequency cepstral coefficients (MFCC)</b>, as input and output, the network can also achieve good results[[7]](https://arxiv.org/pdf/1703.07172.pdf).  
 
 <b>Learning Targets</b>  
-Using the nonlinear mapping ability of neural network, we can map the spectrum directly, which is called mapping approach. 
+Using the nonlinear mapping ability of neural network, we can map the spectrum directly, which is called <b>mapping</b> approach. 
 Masking approach is another common learning targets for speech enhancement. 
 <b>Ideal binary mask (IBM)</b>[[9]](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4293540/) and <b>ideal ratio mask (IRM)</b>[[9]](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4293540/) are common masking approaches based on the computational auditory scene analysis (CASA)[[8]](https://ieeexplore.ieee.org/document/4429320?denied=) theory.  
 
