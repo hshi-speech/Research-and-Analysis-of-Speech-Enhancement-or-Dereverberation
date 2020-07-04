@@ -150,10 +150,50 @@ Moreover, phase information can also be used or even predicted through the netwo
 [17] [D. Yin, C. Luo, Z. Xiong, et al. PHASEN: A Phase-and-Harmonics-Aware Speech Enhancement Network[C]//AAAI. 2020: 9458-9465.](https://www.aaai.org/Papers/AAAI/2020GB/AAAI-YinD.3057.pdf)  
 
 #### 3.2.4 Enhancement module  
+The choice of model is very important. From the beginning of DNN[[6]](http://staff.ustc.edu.cn/~jundu/Publications/publications/SPL2014_Xu.pdf), to CNN[[19]](https://arxiv.org/pdf/1609.07132.pdf) and RNN[[20]](http://home.ustc.edu.cn/~sunlei17/pdf/MULTIPLE-TARGET.pdf), the model is gradually powerful, and the performance of speech enhancement is also improving. 
+The combination of different networks also has a good effect[[21]](https://www.isca-speech.org/archive/Interspeech_2019/pdfs/1477.pdf). 
+U-NET structure[[22]](https://openreview.net/pdf?id=SkeRTsAcYm) has been proved to be effective in many tasks. 
+By using the idea of generation and confrontation, generative adversarial network (GAN)[[23]](https://ieeexplore.ieee.org/abstract/document/8462068) uses the discriminator to judge the effect of the generator, and by introducing some information of the discriminator, to a certain extent, it can alleviate the defect that mean squared error (MSE) as a loss function may not be suitable for human hearing. 
+In order to be more suitable for human hearing, some speech enhancement systems also use evaluation index as loss function, e.g., short-time objective intelligibility (STOI)[[24]](https://arxiv.org/pdf/1802.00604.pdf), [[25]](https://cliffzhao.github.io/Publications/ZXGZ.icassp18.pdf).  
 
+The attention mechanism[[26]](https://papers.nips.cc/paper/7181-attention-is-all-you-need.pdf) is becoming more and more common, and the attention-based approach
+has better generalization ability to unseen noise conditions[[27]](http://www.npu-aslp.org/lxie/papers/2019ICASSP-XiangHao.pdf). 
+Besides, different researcheres use the attention mechanism to model different units, e.g., [[28]](https://arxiv.org/pdf/2001.11542.pdf) use attention mechanism to model different signal channels.  
+
+Considering some characteristics of the network, training or designing some structures can improve the enhanced performance. 
+Transfer learning[[29]](http://staff.ustc.edu.cn/~jundu/The%20team/yongxu/demo/pdfs/Yong_ISCSLP2014.pdf) can improve the performance of the model on small databases by training on large databases and fine tuning on small databases. 
+In the way of multi-target learning (MTL) and combining various features, e.g., mel-frequency cepstral coefficients (MFCC), as input and output, the network can also achieve good results[[7]](https://arxiv.org/pdf/1703.07172.pdf). 
+Different networks are trained according to different SNR[[30]](https://www.researchgate.net/profile/Yu_Tsao/publication/307889660_SNR-Aware_Convolutional_Neural_Network_Modeling_for_Speech_Enhancement/links/57ee69e908ae280dd0ad5866.pdf). 
+[[31]](http://150.162.46.34:8080/icassp2018/ICASSP18_USB/pdfs/0005054.pdf) uses progressive learning to enhance the results step by step. 
+The stacking of networks[[32]](https://web.cse.ohio-state.edu/~wang.77/papers/Wang-Wang1.icassp17.pdf) also shows the effect.  
+
+Moerover, masking and mapping approaches show different effects on different scenarios, which shows some complementary. [[33]](https://ieeexplore.ieee.org/abstract/document/9054661/) proposes minimum difference masks to utilize this complementary, and fuses the spectrograms. 
+[[34]](https://arxiv.org/pdf/1812.08914.pdf) fuses the enhanced signal in time domain and enhanced signal in frequency domain, which also showed the effect.  
+
+The combination of enhancement task and other tasks can enhance each other. 
+The phonetic posteriorgrams (PPG) shows a certain correlation with enhancement[[35]](https://ieeexplore.ieee.org/abstract/document/9054334). 
 
 
 <b>References:</b>   
+[19] [S. R. Park, J. Lee. A fully convolutional neural network for speech enhancement[J]. arXiv preprint arXiv:1609.07132, 2016.](https://arxiv.org/pdf/1609.07132.pdf)  
+[20] [L. Sun, J. Du, L. Dai, et al. Multiple-target deep learning for LSTM-RNN based speech enhancement[C]//2017 HSCMA. IEEE, 2017: 136-140.](http://home.ustc.edu.cn/~sunlei17/pdf/MULTIPLE-TARGET.pdf)  
+[21] [M. Ge, L. Wang, N. Li, et al. Environment-Dependent Attention-Driven Recurrent Convolutional Neural Network for Robust Speech Enhancement[C]//INTERSPEECH. 2019: 3153-3157.](https://www.isca-speech.org/archive/Interspeech_2019/pdfs/1477.pdf)  
+[22] [H. Choi, J. Kim, J. Huh, et al. Phase-aware speech enhancement with deep complex u-net[C]//International Conference on Learning Representations. 2018.](https://openreview.net/pdf?id=SkeRTsAcYm)  
+[23] [M. H. Soni, N. Shah, H. A. Patil. Time-frequency masking-based speech enhancement using generative adversarial network[C]//2018 IEEE ICASSP. IEEE, 2018: 5039-5043.](https://ieeexplore.ieee.org/abstract/document/8462068)  
+[24] [M. Kolbæk, Z. Tan, J. Jensen. Monaural speech enhancement using deep neural networks by maximizing a short-time objective intelligibility measure[C]//2018 IEEE ICASSP. IEEE, 2018: 5059-5063.](https://arxiv.org/pdf/1802.00604.pdf)  
+[25] [Y. Zhao, B. Xu, R. Giri, et al. Perceptually guided speech enhancement using deep neural networks[C]//2018 IEEE ICASSP. IEEE, 2018: 5074-5078.](https://cliffzhao.github.io/Publications/ZXGZ.icassp18.pdf)  
+[26] [A. Vaswani, N. Shazeer, N. Parmar, et al. Attention is all you need[C]//Advances in neural information processing systems. 2017: 5998-6008.](https://papers.nips.cc/paper/7181-attention-is-all-you-need.pdf)  
+[27] [X. Hao, C. Shan, Y. Xu, et al. An attention-based neural network approach for single channel speech enhancement[C]// 2019 IEEE ICASSP. IEEE, 2019: 6895-6899.](http://www.npu-aslp.org/lxie/papers/2019ICASSP-XiangHao.pdf)  
+[28] [B. Tolooshams, R. Giri, A. H. Song, et al. Channel-Attention Dense U-Net for Multichannel Speech Enhancement[C]//ICASSP 2020 ICASSP. IEEE, 2020: 836-840.](https://arxiv.org/pdf/2001.11542.pdf)  
+[29] [Y. Xu, J. Du, L. Dai, et al. Cross-language transfer learning for deep neural network based speech enhancement[C]//The 9th International Symposium on Chinese Spoken Language Processing. IEEE, 2014: 336-340.](http://staff.ustc.edu.cn/~jundu/The%20team/yongxu/demo/pdfs/Yong_ISCSLP2014.pdf)  
+[30] [S. Fu, Y. Tsao, X. Lu. SNR-Aware Convolutional Neural Network Modeling for Speech Enhancement[C]//Interspeech. 2016: 3768-3772.](https://www.researchgate.net/profile/Yu_Tsao/publication/307889660_SNR-Aware_Convolutional_Neural_Network_Modeling_for_Speech_Enhancement/links/57ee69e908ae280dd0ad5866.pdf)  
+[31] [T. Gao, J. Du, L. Dai, et al. Densely connected progressive learning for lstm-based speech enhancement[C]//2018 IEEE ICASSP. IEEE, 2018: 5054-5058.](http://150.162.46.34:8080/icassp2018/ICASSP18_USB/pdfs/0005054.pdf)  
+[32] [Z. Wang, D. Wang. Recurrent deep stacking networks for supervised speech separation[C]//2017 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP). IEEE, 2017: 71-75.](https://web.cse.ohio-state.edu/~wang.77/papers/Wang-Wang1.icassp17.pdf)  
+[33] [H. Shi, L. Wang, M. Ge, et al. Spectrograms Fusion with Minimum Difference Masks Estimation for Monaural Speech Dereverberation[C]//ICASSP ICASSP. IEEE, 2020: 7544-7548.](https://ieeexplore.ieee.org/abstract/document/9054661/)  
+[34] [J. Kim, J. Yoo, S. Chun, et al. Multi-domain processing via hybrid denoising networks for speech enhancement[J]. arXiv preprint arXiv:1812.08914, 2018.](https://arxiv.org/pdf/1812.08914.pdf)  
+[35] [Z. Du, M. Lei, J. Han, et al. Pan: Phoneme-Aware Network for Monaural Speech Enhancement[C]//ICASSP 2020 IEEE ICASSP. IEEE, 2020: 6634-6638.](https://ieeexplore.ieee.org/abstract/document/9054334)  
+
+
 
 #### 3.2.5 Post-processing module
 
