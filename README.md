@@ -154,7 +154,8 @@ The choice of model is very important. From the beginning of DNN[[6]](http://sta
 The combination of different networks also has a good effect[[21]](https://www.isca-speech.org/archive/Interspeech_2019/pdfs/1477.pdf). 
 U-NET structure[[22]](https://openreview.net/pdf?id=SkeRTsAcYm) has been proved to be effective in many tasks. 
 By using the idea of generation and confrontation, generative adversarial network (GAN)[[23]](https://ieeexplore.ieee.org/abstract/document/8462068) uses the discriminator to judge the effect of the generator, and by introducing some information of the discriminator, to a certain extent, it can alleviate the defect that mean squared error (MSE) as a loss function may not be suitable for human hearing. 
-In order to be more suitable for human hearing, some speech enhancement systems also use evaluation index as loss function, e.g., short-time objective intelligibility (STOI)[[24]](https://arxiv.org/pdf/1802.00604.pdf), [[25]](https://cliffzhao.github.io/Publications/ZXGZ.icassp18.pdf).  
+In order to be more suitable for human hearing, some speech enhancement systems also use evaluation index as loss function, e.g., short-time objective intelligibility (STOI)[[24]](https://arxiv.org/pdf/1802.00604.pdf), [[25]](https://cliffzhao.github.io/Publications/ZXGZ.icassp18.pdf). 
+Noise (domain) information can be used in the model in the form of loss[[36]](https://arxiv.org/pdf/1807.07501.pdf).  
 
 The attention mechanism[[26]](https://papers.nips.cc/paper/7181-attention-is-all-you-need.pdf) is becoming more and more common, and the attention-based approach
 has better generalization ability to unseen noise conditions[[27]](http://www.npu-aslp.org/lxie/papers/2019ICASSP-XiangHao.pdf). 
@@ -172,7 +173,6 @@ Moerover, masking and mapping approaches show different effects on different sce
 
 The combination of enhancement task and other tasks can enhance each other. 
 The phonetic posteriorgrams (PPG) shows a certain correlation with enhancement[[35]](https://ieeexplore.ieee.org/abstract/document/9054334). 
-
 
 <b>References:</b>   
 [19] [S. R. Park, J. Lee. A fully convolutional neural network for speech enhancement[J]. arXiv preprint arXiv:1609.07132, 2016.](https://arxiv.org/pdf/1609.07132.pdf)  
@@ -192,7 +192,7 @@ The phonetic posteriorgrams (PPG) shows a certain correlation with enhancement[[
 [33] [H. Shi, L. Wang, M. Ge, et al. Spectrograms Fusion with Minimum Difference Masks Estimation for Monaural Speech Dereverberation[C]//ICASSP ICASSP. IEEE, 2020: 7544-7548.](https://ieeexplore.ieee.org/abstract/document/9054661/)  
 [34] [J. Kim, J. Yoo, S. Chun, et al. Multi-domain processing via hybrid denoising networks for speech enhancement[J]. arXiv preprint arXiv:1812.08914, 2018.](https://arxiv.org/pdf/1812.08914.pdf)  
 [35] [Z. Du, M. Lei, J. Han, et al. Pan: Phoneme-Aware Network for Monaural Speech Enhancement[C]//ICASSP 2020 IEEE ICASSP. IEEE, 2020: 6634-6638.](https://ieeexplore.ieee.org/abstract/document/9054334)  
-
+[36] [C. Liao, Y. Tsao, H. Lee, et al. Noise adaptive speech enhancement using domain adversarial training[J]. arXiv preprint arXiv:1807.07501, 2018.](https://arxiv.org/pdf/1807.07501.pdf)
 
 
 #### 3.2.5 Post-processing module
