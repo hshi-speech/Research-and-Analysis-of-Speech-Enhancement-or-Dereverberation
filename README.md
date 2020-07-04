@@ -36,14 +36,15 @@ In real life, microphone pickup, in addition to receiving voice, will also recei
 
 The mathematical expression is as follows:  
 $x = r * s + n$  
-$s$ is speech signal (desired), $r$ is room impulse response (RIR) [1], $n$ is additive noise signal, and $x$ is microphone pickup signal, the noisy signal. 
+$s$ is speech signal (desired), $r$ is room impulse response (RIR)[1], $n$ is additive noise signal, and $x$ is microphone pickup signal, the noisy signal. 
 The speech enhancement system wants to recover $s$ from $x$.  
 
+Besides, some people think that it is necessary to remove the additive noise and reverberation[2] at the same time, but others think it is necessary to remove them separately[3]. Therefore, there is no definite conclusion at present. But I prefer to remove additive noise and reverberation separately (`Personal opinion, for reference only`). 
 
-  <b>References:</b>  
-  [1] [E.A.P. Habets. Room impulse response generator[J]. Technische Universiteit Eindhoven, Tech. Rep, 2006, 2(2.4): 1.](https://www.researchgate.net/profile/Emanuel_Habets/publication/259991276_Room_Impulse_Response_Generator/links/5800ea5808ae1d2d72eae2a0/Room-Impulse-Response-Generator.pdf) 
-
-
+<b>References:</b>  
+[1] [E.A.P. Habets. Room impulse response generator[J]. Technische Universiteit Eindhoven, Tech. Rep, 2006, 2(2.4): 1.](https://www.researchgate.net/profile/Emanuel_Habets/publication/259991276_Room_Impulse_Response_Generator/links/5800ea5808ae1d2d72eae2a0/Room-Impulse-Response-Generator.pdf) 
+[2] [K. Han, Y. Wang, D. Wang, et al. Learning spectral mapping for speech dereverberation and denoising[J]. IEEE/ACM TASLP, 2015, 23(6): 982-992.](http://web.cse.ohio-state.edu/~wang.77/papers/HWWWMZ.taslp15.pdf)
+[3] [Y. Zhao, Z. Wang, D. Wang. A two-stage algorithm for noisy and reverberant speech enhancement[C]//2017 IEEE ICASSP. IEEE, 2017: 5580-5584.](http://150.162.46.34:8080/icassp2017/pdfs/0005580.pdf)
 
 
 
