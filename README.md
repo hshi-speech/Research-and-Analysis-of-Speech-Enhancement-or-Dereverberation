@@ -17,10 +17,13 @@ My email: hshi.cca@gmail.com, hshi_cca@tju.edu.cn (I will not be able to use thi
 >> 1.2 Classification of speech enhancement (dereverberation)  
 > 2. Traditional speech enhancement or dereverberation methods (I will show this part in the future.)  
 > 3. Deep learning-based speech enhancement (dereverberation) methods
->> 3.1 Basic framework    
->> 3.2 Frequency domain speech enhancement (dereverberation)
->>> 3.2.1 Strategy of research
->>> 3.2.2 
+>> 3.1 Basic framework  
+>> 3.2 Frequency domain speech enhancement (dereverberation)  
+>>> 3.2.1 Feature extraction module  
+>>> 3.2.2 Inputs module  
+>>> 3.2.3 Phase module  
+>>> 3.2.4 Enhancement module  
+>> 3.3 Time domain speech enhancement (dereverberation)  
 > 4. Public datasets  
 > 5. Performance  
 > 6. Future trends  
@@ -77,6 +80,7 @@ In section 1.2, I give the classification of speech enhancement, and their basic
 `In fact, each module in the diagram has no clear name. We are here to introduce the work more conveniently, so we give each part a name. (don't spray if you don't like it)` 
 According to my experience, speech enhancement in frequency domain is divided into four modules, while speech enhancement in time domain is divided into three modules. 
 That is because I feel that the current speech enhancement, we are generally improve the performance from these parts. 
+Everyone's classification is different. Here I will sort it out according to my ideas. In many papers, the improved model may have more than one module. Here I only focus on the most important improvement in these papers to classify. 
 I have been focusing on speech enhancement for about a year and a half. Of course, there are some models that I have not paid attention to. Please put forward your correction by email.  
 
 
