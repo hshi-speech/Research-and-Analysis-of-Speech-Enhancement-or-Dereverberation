@@ -36,11 +36,12 @@ In real life, microphone pickup, in addition to receiving voice, will also recei
 
 The mathematical expression is as follows:  
 $x = r * s + n$  
-$s$ is speech signal (desired), $r$ is room impulse response (RIR), $n$ is additive noise signal, and $x$ is microphone pickup signal, the noisy signal. 
+$s$ is speech signal (desired), $r$ is room impulse response (RIR) [1], $n$ is additive noise signal, and $x$ is microphone pickup signal, the noisy signal. 
 The speech enhancement system wants to recover $s$ from $x$.  
 
 
-
+<b>References:</b>  
+[1] E.A.P. Habets. Room impulse response generator[J]. Technische Universiteit Eindhoven, Tech. Rep, 2006, 2(2.4): 1. 
 
 
 
