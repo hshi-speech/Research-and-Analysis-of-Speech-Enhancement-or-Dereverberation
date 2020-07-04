@@ -91,30 +91,71 @@ I divide it into five modules.
 I will show you how to improve the frequency domain speech enhancement algorithm from these five parts.  
 
 #### 3.2.1 Feature extraction module  
+The input feature is very important to the learning of neural network. 
+Mel frequency power spectrum (MFP) was used for speech enhancement in INTERSPEECH 2013 [[5]](https://bio-asplab.citi.sinica.edu.tw/paper/conference/lu2013speech.pdf). 
+At present, the most common feature is the magnitude of spectrogram. Log processing of the magnitude of spectrogram[[6]](http://staff.ustc.edu.cn/~jundu/Publications/publications/SPL2014_Xu.pdf) is more suitable for human hearing. 
+Using the nonlinear mapping ability of neural network, we can map the spectrum directly, which is called mapping approach. 
+Masking approach is another common learning targets for speech enhancement. 
+Ideal binary mask (IBM)[[9]](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4293540/) and ideal ratio mask (IRM)[[9]](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4293540/) are common masking approaches based on the computational auditory scene analysis (CASA)[[8]](https://ieeexplore.ieee.org/document/4429320?denied=) theory. 
 
+Moreover, in the way of multi-target learning (MTL) and combining various features, e.g., mel-frequency cepstral coefficients (MFCC), as input and output, the network can also achieve good results[[7]](https://arxiv.org/pdf/1703.07172.pdf).  
+
+Besides, considering the influence of phase to speech enhancement, the complex ideal ratio mask (cIRM)[[10]](http://homes.sice.indiana.edu/williads/publication_files/williamsonetal.cRM.ICASSP2016.pdf) and the phase-sensitive spectrum approximation (PSA)[[11]](https://merl.com/publications/docs/TR2015-031.pdf) are also proposed and used.  
+
+In addition to Fourier transform, other transform methods, such as Z-transform, will also be used in feature extraction of speech enhancement. 
+Different filter banks have great influence on feature extraction.  
+
+<b>References:</b> 
+[5] [X. Lu, Y. Tsao, S. Matsuda, et al. Speech enhancement based on deep denoising autoencoder[C]//Interspeech. 2013, 2013: 436-440.](https://bio-asplab.citi.sinica.edu.tw/paper/conference/lu2013speech.pdf)  
+[6] [Y. Xu, J. Du, L. Dai, et al. An experimental study on speech enhancement based on deep neural networks[J]. IEEE Signal processing letters, 2013, 21(1): 65-68.](http://staff.ustc.edu.cn/~jundu/Publications/publications/SPL2014_Xu.pdf)  
+[7] [Y. Xu, J. Du, Z. Huang, et al. Multi-objective learning and mask-based post-processing for deep neural network based speech enhancement[J]. arXiv preprint arXiv:1703.07172, 2017.](https://arxiv.org/pdf/1703.07172.pdf)  
+[8] [D. Wang, G. J. Brown. Computational auditory scene analysis: Principles, algorithms, and applications[M]. Wiley-IEEE press, 2006.](https://ieeexplore.ieee.org/document/4429320?denied=)  
+[9] [Y. Wang, A. Narayanan, D. Wang. On training targets for supervised speech separation[J]. IEEE/ACM transactions on audio, speech, and language processing, 2014, 22(12): 1849-1858.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4293540/)  
+[10] [D. S. Williamson, Y. Wang, D. Wang. Complex ratio masking for joint enhancement of magnitude and phase[C]//2016 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP). IEEE, 2016: 5220-5224.](http://homes.sice.indiana.edu/williads/publication_files/williamsonetal.cRM.ICASSP2016.pdf)  
+[11] [H. Erdogan, J. R. Hershey, S. Watanabe, et al. Phase-sensitive and recognition-boosted speech separation using deep recurrent neural networks[C]//2015 IEEE ICASSP. IEEE, 2015: 708-712.
+](https://merl.com/publications/docs/TR2015-031.pdf)  
 
 #### 3.2.2 Inputs module  
 
 
+
+<b>References:</b> 
+
 #### 3.2.3 Phase module  
+Besides, considering the inconsistency between the enhanced spectrogram and the noisy phase when inverse STFT (ISTFT)[[]](https://arxiv.org/pdf/1811.08521.pdf), 
+
+
+<b>References:</b> 
+[] [](https://arxiv.org/pdf/1811.08521.pdf)
+
 
 
 #### 3.2.4 Enhancement module  
 
 
+
+<b>References:</b> 
+
 #### 3.2.5 Post-processing module
 
 
+<b>References:</b> 
 
 ### 3.2 Time domain speech enhancement (dereverberation)  
 
 
 
+<b>References:</b> 
+
 ## 4. Public datasets  
+
+
 
 
 ## 5. Performance comparison  
 
+
+<b>References:</b> 
 
 ## 6. Future trends  
 
