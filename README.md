@@ -136,13 +136,19 @@ Moreover, there are other information that can help improve the performance of s
 
 #### 3.2.3 Phase module  
 After a long time of research, researchers found that phase information is also important[[14]](https://maxwell.ict.griffith.edu.au/spl/publications/papers/spcom11_phase_enhance.pdf) for speech enhancement. 
-However, due to the fact that there is no fixed law of phase information and there are some problems such as phase winding, it is difficult to deal with phase information.  Therefore, in the early speech enhancement based on deep learning, only magnitude information is processed, and then the waveform is reconstructed with noisy phase. 
-Besides, considering the inconsistency between the enhanced spectrogram and the noisy phase when inverse STFT (ISTFT)[[14]](https://arxiv.org/pdf/1811.08521.pdf). 
+However, due to the fact that there is no fixed law of phase information and there are some problems such as phase winding, it is difficult to deal with phase information.  Therefore, in the early speech enhancement based on deep learning, only magnitude information is processed, and then the waveform is reconstructed with noisy phase.  
+
+<b>Inconsistency of ISTFT</b>  
+Besides, considering the inconsistency between the enhanced spectrogram and the noisy phase when inverse STFT (ISTFT)[[14]](https://arxiv.org/pdf/1811.08521.pdf).  
+
+<b>Iterative Signal Rconstruction</b>  
 The simplest way to deal with phase is by iterating[[16]](http://web.cse.ohio-state.edu/~wang.77/papers/HWWWMZ.taslp15.pdf). Firstly, the enhanced amplitude information and noisy phase are used to reconstruct the waveform, and then the phase of the reconstructed waveform is extracted, and then the re extracted phase is used to reconstruct the waveform. Through repeated iterations, the effect can be improved.  
 
+<b>A Way of Bypassing or Utilizing Phase Information</b>  
 PSA[[11]](https://merl.com/publications/docs/TR2015-031.pdf) can make use of the phase information and improve to a certain extent. 
 cIRM[[10]](http://homes.sice.indiana.edu/williads/publication_files/williamsonetal.cRM.ICASSP2016.pdf) and time domain speech enhancement can bypass the phase problem.  
 
+<b>Phase reconstruction</b>  
 Moreover, phase information can also be used or even predicted through the network, combined with magnitude information[[17]](https://www.aaai.org/Papers/AAAI/2020GB/AAAI-YinD.3057.pdf).  
 
 <b>References:</b>   
