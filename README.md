@@ -105,7 +105,9 @@ Besides, considering the influence of phase to speech enhancement, the complex i
 In addition to Fourier transform, other transform methods, such as Z-transform, will also be used in feature extraction of speech enhancement. 
 Different filter banks have great influence on feature extraction.  
 
-<b>References:</b> 
+Whether to normalize the features, and how to normalize the features, I will sort them out and improve them continuously!  
+
+<b>References:</b>  
 [5] [X. Lu, Y. Tsao, S. Matsuda, et al. Speech enhancement based on deep denoising autoencoder[C]//Interspeech. 2013, 2013: 436-440.](https://bio-asplab.citi.sinica.edu.tw/paper/conference/lu2013speech.pdf)  
 [6] [Y. Xu, J. Du, L. Dai, et al. An experimental study on speech enhancement based on deep neural networks[J]. IEEE Signal processing letters, 2013, 21(1): 65-68.](http://staff.ustc.edu.cn/~jundu/Publications/publications/SPL2014_Xu.pdf)  
 [7] [Y. Xu, J. Du, Z. Huang, et al. Multi-objective learning and mask-based post-processing for deep neural network based speech enhancement[J]. arXiv preprint arXiv:1703.07172, 2017.](https://arxiv.org/pdf/1703.07172.pdf)  
