@@ -21,6 +21,7 @@ A lot of my summary is not very good, I hope you put forward corrections!
 || ------------------ 3.2.3 Phase module  
 || ------------------ 3.2.4 Enhancement module  
 || ------------------ 3.2.5 Post-processing module  
+|| ------------------ 3.2.6 Combined with traditional speech enhancement  
 || ------------ 3.3 Frequency domain speech enhancement (Multi-channel)  
 || ------------ 3.4 Time domain speech enhancement  
 || ------------------ 3.4.1 Why use FCN (CNN) in time-domain  
@@ -236,7 +237,15 @@ The combination of enhancement task and other tasks can enhance each other.
 By summing the signals of multiple systems in a certain proportion, the gain effect can be obtained[[46]](https://www.researchgate.net/profile/Ivan_Tashev/publication/327814608_A_Hybrid_Approach_to_Combining_Conventional_and_Deep_Learning_Techniques_for_Single-Channel_Speech_Enhancement_and_Recognition/links/5bcfd2a692851c1816bc888f/A-Hybrid-Approach-to-Combining-Conventional-and-Deep-Learning-Techniques-for-Single-Channel-Speech-Enhancement-and-Recognition.pdf).  
 
 <b>References:</b>  
-[46] [Y. Tu, I. Tashev, S. Zarar, et al. A hybrid approach to combining conventional and deep learning techniques for single-channel speech enhancement and recognition[C]//2018 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP). IEEE, 2018: 2531-2535.](https://www.researchgate.net/profile/Ivan_Tashev/publication/327814608_A_Hybrid_Approach_to_Combining_Conventional_and_Deep_Learning_Techniques_for_Single-Channel_Speech_Enhancement_and_Recognition/links/5bcfd2a692851c1816bc888f/A-Hybrid-Approach-to-Combining-Conventional-and-Deep-Learning-Techniques-for-Single-Channel-Speech-Enhancement-and-Recognition.pdf)  
+[46] [Y. Tu, I. Tashev, S. Zarar, et al. A hybrid approach to combining conventional and deep learning techniques for single-channel speech enhancement and recognition[C]//2018 IEEE ICASSP. IEEE, 2018: 2531-2535.](https://www.researchgate.net/profile/Ivan_Tashev/publication/327814608_A_Hybrid_Approach_to_Combining_Conventional_and_Deep_Learning_Techniques_for_Single-Channel_Speech_Enhancement_and_Recognition/links/5bcfd2a692851c1816bc888f/A-Hybrid-Approach-to-Combining-Conventional-and-Deep-Learning-Techniques-for-Single-Channel-Speech-Enhancement-and-Recognition.pdf)  
+
+
+#### 3.2.6 Combined with traditional speech enhancement  
+* Combined with minimum mean-square error (MMSE)[[47]](https://maxwell.ict.griffith.edu.au/spl/publications/papers/spcom19_aaron_deep.pdf). 
+
+<b>References:</b>  
+[47] [A. Nicolson, K. K. Paliwal. Deep learning for minimum mean-square error approaches to speech enhancement[J]. Speech Communication, 2019, 111: 44-55.](https://maxwell.ict.griffith.edu.au/spl/publications/papers/spcom19_aaron_deep.pdf)  
+
 
 ### 3.3 Frequency domain speech enhancement (Multi-channel)   
 
@@ -262,11 +271,11 @@ It is proved that FCN has more advantages than fully connected network in proces
 
 #### 3.4.3 Loss function
 * Loss in frequency domain[[42]](https://ashutosh620.github.io/files/AECNN_INTERSPEECH_2018.pdf).  
-
+* In the time domain model, several loss functions are compared[[48]](https://arxiv.org/pdf/1909.01019.pdf).  
 
 <b>References:</b>  
 [42] [A. Pandey, D. Wang. A New Framework for Supervised Speech Enhancement in the Time Domain[C]//Interspeech. 2018: 1136-1140.](https://ashutosh620.github.io/files/AECNN_INTERSPEECH_2018.pdf)  
-
+[48] [M. Kolbæk, Z. Tan, S. Jensen, et al. On loss functions for supervised monaural time-domain speech enhancement[J]. IEEE/ACM Transactions on Audio, Speech, and Language Processing, 2020, 28: 825-838.](https://arxiv.org/pdf/1909.01019.pdf)  
 
 ## 4. Public datasets  
 
