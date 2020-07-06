@@ -195,7 +195,10 @@ The stacking of networks[[32]](https://web.cse.ohio-state.edu/~wang.77/papers/Wa
 
 <b>Mutual Enhancement</b>  
 The combination of enhancement task and other tasks can enhance each other. 
-* The phonetic posteriorgrams (PPG) shows a certain correlation with enhancement[[35]](https://ieeexplore.ieee.org/abstract/document/9054334). 
+* The phonetic posteriorgrams (PPG) shows a certain correlation with enhancement[[35]](https://ieeexplore.ieee.org/abstract/document/9054334).  
+
+<b>Combined with other information</b>  
+By adding visual information to enhance enhanced performance[[37]](https://arxiv.org/pdf/1804.04121.pdf).  
 
 <b>References:</b>   
 [19] [S. R. Park, J. Lee. A fully convolutional neural network for speech enhancement[J]. arXiv preprint arXiv:1609.07132, 2016.](https://arxiv.org/pdf/1609.07132.pdf)  
@@ -215,7 +218,8 @@ The combination of enhancement task and other tasks can enhance each other.
 [33] [H. Shi, L. Wang, M. Ge, et al. Spectrograms Fusion with Minimum Difference Masks Estimation for Monaural Speech Dereverberation[C]//ICASSP ICASSP. IEEE, 2020: 7544-7548.](https://ieeexplore.ieee.org/abstract/document/9054661/)  
 [34] [J. Kim, J. Yoo, S. Chun, et al. Multi-domain processing via hybrid denoising networks for speech enhancement[J]. arXiv preprint arXiv:1812.08914, 2018.](https://arxiv.org/pdf/1812.08914.pdf)  
 [35] [Z. Du, M. Lei, J. Han, et al. Pan: Phoneme-Aware Network for Monaural Speech Enhancement[C]//ICASSP 2020 IEEE ICASSP. IEEE, 2020: 6634-6638.](https://ieeexplore.ieee.org/abstract/document/9054334)  
-[36] [C. Liao, Y. Tsao, H. Lee, et al. Noise adaptive speech enhancement using domain adversarial training[J]. arXiv preprint arXiv:1807.07501, 2018.](https://arxiv.org/pdf/1807.07501.pdf)
+[36] [C. Liao, Y. Tsao, H. Lee, et al. Noise adaptive speech enhancement using domain adversarial training[J]. arXiv preprint arXiv:1807.07501, 2018.](https://arxiv.org/pdf/1807.07501.pdf)  
+[37] [T. Afouras, J. Chung, A. Zisserman. The conversation: Deep audio-visual speech enhancement[J]. arXiv preprint arXiv:1804.04121, 2018.](https://arxiv.org/pdf/1804.04121.pdf)  
 
 
 #### 3.2.5 Post-processing module
