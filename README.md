@@ -130,6 +130,8 @@ In fact, this part should be combined with 3.2.1 to say what features need to be
 * [[7]](https://arxiv.org/pdf/1703.07172.pdf) shows that some complimentary features can improve the enhancement performance. 
 * In recently years, adding some symbol information [[12]](https://arxiv.org/pdf/1904.13142.pdf) and 
 * text information[[13]](http://www.kecl.ntt.co.jp/icl/signal/kinoshita/publications/Interspeech15/IS150674.pdf) to the network can improve the performance of speech enhancement.  
+* By adding visual information to enhance enhanced performance[[37]](https://arxiv.org/pdf/1804.04121.pdf).  
+* Adding predicted noise information[[38]](http://staff.ustc.edu.cn/~jundu/The%20team/yongxu/demo/pdfs/DNAT-SEDNN-IS14-YONG.pdf).  
 * Besides, it is also necessary to select whether frame-level[[6]](http://staff.ustc.edu.cn/~jundu/Publications/publications/SPL2014_Xu.pdf) features or 
 * utterance-level features[[18]](https://www.researchgate.net/profile/Ke_Tan6/publication/325542192_A_Convolutional_Recurrent_Neural_Network_for_Real-Time_Speech_Enhancement/links/5b91955292851c78c4f3d317/A-Convolutional-Recurrent-Neural-Network-for-Real-Time-Speech-Enhancement.pdf) are needed, and 
 * whether or not frame expansion[[6]](http://staff.ustc.edu.cn/~jundu/Publications/publications/SPL2014_Xu.pdf) is needed and how many frames are spliced. 
@@ -139,6 +141,7 @@ In fact, this part should be combined with 3.2.1 to say what features need to be
 [12] [C. Liao, Y. Tsao, X. Lu, et al. Incorporating symbolic sequential modeling for speech enhancement[J]. arXiv preprint arXiv:1904.13142, 2019.](https://arxiv.org/pdf/1904.13142.pdf)  
 [13] [K. Kinoshita, M. Delcroix, A. Ogawa, et al. Text-informed speech enhancement with deep neural networks[C]//Sixteenth Annual Conference of the International Speech Communication Association. 2015.](http://www.kecl.ntt.co.jp/icl/signal/kinoshita/publications/Interspeech15/IS150674.pdf)  
 [18] [K. Tan, D. Wang. A Convolutional Recurrent Neural Network for Real-Time Speech Enhancement[C]//Interspeech. 2018: 3229-3233.](https://www.researchgate.net/profile/Ke_Tan6/publication/325542192_A_Convolutional_Recurrent_Neural_Network_for_Real-Time_Speech_Enhancement/links/5b91955292851c78c4f3d317/A-Convolutional-Recurrent-Neural-Network-for-Real-Time-Speech-Enhancement.pdf)  
+[38] [Y. Xu, J. Du, L. Dai, et al. Dynamic noise aware training for speech enhancement based on deep neural networks[C]//Fifteenth Annual Conference of the International Speech Communication Association. 2014.](http://staff.ustc.edu.cn/~jundu/The%20team/yongxu/demo/pdfs/DNAT-SEDNN-IS14-YONG.pdf)
 
 #### 3.2.3 Phase module  
 After a long time of research, researchers found that phase information is also important[[14]](https://maxwell.ict.griffith.edu.au/spl/publications/papers/spcom11_phase_enhance.pdf) for speech enhancement. 
@@ -174,7 +177,7 @@ The choice of model is very important.
 
 <b>Design of Network Structure</b>  
 * U-NET structure[[22]](https://openreview.net/pdf?id=SkeRTsAcYm) has been proved to be effective in many tasks. 
-* By using the idea of generation and confrontation, generative adversarial network (GAN)[[23]](https://ieeexplore.ieee.org/abstract/document/8462068) uses the discriminator to judge the effect of the generator, and by introducing some information of the discriminator, to a certain extent, it can alleviate the defect that mean squared error (MSE) as a loss function may not be suitable for human hearing. 
+* By using the idea of generation and confrontation, generative adversarial network (GAN)[[23]](https://ieeexplore.ieee.org/abstract/document/8462068)[[40]](https://arxiv.org/pdf/1709.01703.pdf) uses the discriminator to judge the effect of the generator, and by introducing some information of the discriminator, to a certain extent, it can alleviate the defect that mean squared error (MSE) as a loss function may not be suitable for human hearing. 
 
 <b>Loss Function</b>  
 * In order to be more suitable for human hearing, some speech enhancement systems also use evaluation index as loss function, e.g., short-time objective intelligibility (STOI)[[24]](https://arxiv.org/pdf/1802.00604.pdf), [[25]](https://cliffzhao.github.io/Publications/ZXGZ.icassp18.pdf). 
@@ -189,9 +192,12 @@ has better generalization ability to unseen noise conditions[[27]](http://www.np
 Considering some characteristics of the network, training or designing some structures can improve the enhanced performance. 
 * Transfer learning[[29]](http://staff.ustc.edu.cn/~jundu/The%20team/yongxu/demo/pdfs/Yong_ISCSLP2014.pdf) can improve the performance of the model on small databases by training on large databases and fine tuning on small databases. 
 * In the way of multi-target learning (MTL) and combining various features, e.g., mel-frequency cepstral coefficients (MFCC), as input and output, the network can also achieve good results[[7]](https://arxiv.org/pdf/1703.07172.pdf). 
+* And ASR learn in the way of MTL to improve performance[[41]](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.712.1367&rep=rep1&type=pdf).  
 * Different networks are trained according to different SNR[[30]](https://www.researchgate.net/profile/Yu_Tsao/publication/307889660_SNR-Aware_Convolutional_Neural_Network_Modeling_for_Speech_Enhancement/links/57ee69e908ae280dd0ad5866.pdf). 
 * [[31]](http://150.162.46.34:8080/icassp2018/ICASSP18_USB/pdfs/0005054.pdf) uses progressive learning to enhance the results step by step. 
 The stacking of networks[[32]](https://web.cse.ohio-state.edu/~wang.77/papers/Wang-Wang1.icassp17.pdf) also shows the effect.  
+* An additional inverse mapping network is introduced to reconstruct the noisy features from the enhanced ones (but this paper just show the performance of ASR)[[44]](https://arxiv.org/pdf/1809.02253.pdf).  
+
 
 <b>Fusion Strategy</b>  
 * Moerover, masking and mapping approaches show different effects on different scenarios, which shows some complementary. [[33]](https://ieeexplore.ieee.org/abstract/document/9054661/) proposes minimum difference masks to utilize this complementary, and fuses the spectrograms. 
@@ -200,9 +206,7 @@ The stacking of networks[[32]](https://web.cse.ohio-state.edu/~wang.77/papers/Wa
 <b>Mutual Enhancement</b>  
 The combination of enhancement task and other tasks can enhance each other. 
 * The phonetic posteriorgrams (PPG) shows a certain correlation with enhancement[[35]](https://ieeexplore.ieee.org/abstract/document/9054334).  
-
-<b>Combined with other information</b>  
-* By adding visual information to enhance enhanced performance[[37]](https://arxiv.org/pdf/1804.04121.pdf).  
+ 
 
 <b>References:</b>   
 [19] [S. R. Park, J. Lee. A fully convolutional neural network for speech enhancement[J]. arXiv preprint arXiv:1609.07132, 2016.](https://arxiv.org/pdf/1609.07132.pdf)  
@@ -224,7 +228,9 @@ The combination of enhancement task and other tasks can enhance each other.
 [35] [Z. Du, M. Lei, J. Han, et al. Pan: Phoneme-Aware Network for Monaural Speech Enhancement[C]//ICASSP 2020 IEEE ICASSP. IEEE, 2020: 6634-6638.](https://ieeexplore.ieee.org/abstract/document/9054334)  
 [36] [C. Liao, Y. Tsao, H. Lee, et al. Noise adaptive speech enhancement using domain adversarial training[J]. arXiv preprint arXiv:1807.07501, 2018.](https://arxiv.org/pdf/1807.07501.pdf)  
 [37] [T. Afouras, J. Chung, A. Zisserman. The conversation: Deep audio-visual speech enhancement[J]. arXiv preprint arXiv:1804.04121, 2018.](https://arxiv.org/pdf/1804.04121.pdf)  
-
+[40] [D. Michelsanti, Z. Tan. Conditional generative adversarial networks for speech enhancement and noise-robust speaker verification[J]. arXiv preprint arXiv:1709.01703, 2017.](https://arxiv.org/pdf/1709.01703.pdf)  
+[41] [Z. Chen, S. Watanabe, H. Erdogan, et al. Speech enhancement and recognition using multi-task learning of long short-term memory recurrent neural networks[C]//Sixteenth Annual Conference of the International Speech Communication Association. 2015.](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.712.1367&rep=rep1&type=pdf)  
+[44] [Z. Meng, J. Li, Y. Gong. Cycle-consistent speech enhancement[J]. arXiv preprint arXiv:1809.02253, 2018.](https://arxiv.org/pdf/1809.02253.pdf)  
 
 #### 3.2.5 Post-processing module
 
@@ -239,15 +245,26 @@ The combination of enhancement task and other tasks can enhance each other.
 Time domain speech enhancement can enhance the time domain speech waveform signal in the form of end-to-end because it does not need to consider the characteristics and can bypass the phase problem. Moreover, in many literatures, I found that the time domain speech enhancement basically uses convolutional neural network (CNN) or fully convolutional neural network (FCN) as the network structure. 
 
 #### 3.4.1 Why use FCN (CNN) in time-domain
+It is proved that FCN has more advantages than fully connected network in processing time domain signals[[39]](https://arxiv.org/ftp/arxiv/papers/1703/1703.02205.pdf).  
+
+<b>References:</b>  
+[39] [S. Fu, Y. Tsao, X. Lu, et al. Raw waveform-based speech enhancement by fully convolutional networks[C]//2017 APSIPA ASC. IEEE, 2017: 006-012.](https://arxiv.org/ftp/arxiv/papers/1703/1703.02205.pdf)  
 
 
 #### 3.4.2 Neural network structure
+* SEGAN[[43]](https://arxiv.org/pdf/1703.09452.pdf).  
+
+<b>References:</b>  
+[43] [S. Pascual, A. Bonafonte, J. Serra. SEGAN: Speech enhancement generative adversarial network[J]. arXiv preprint arXiv:1703.09452, 2017.](https://arxiv.org/pdf/1703.09452.pdf)  
 
 
 #### 3.4.3 Loss function
+* Loss in frequency domain[[42]](https://ashutosh620.github.io/files/AECNN_INTERSPEECH_2018.pdf).  
 
 
 <b>References:</b>  
+[42] [A. Pandey, D. Wang. A New Framework for Supervised Speech Enhancement in the Time Domain[C]//Interspeech. 2018: 1136-1140.](https://ashutosh620.github.io/files/AECNN_INTERSPEECH_2018.pdf)  
+
 
 ## 4. Public datasets  
 
