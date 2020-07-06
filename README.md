@@ -42,9 +42,9 @@ In real life, microphone pickup, in addition to receiving voice, will also recei
 `Speech enhancement (dereverberation) is speech noise reduction (denoising).`  
 
 The mathematical expression is as follows:  
-$x = r * s + n$  
-$s$ is speech signal (desired), $r$ is room impulse response (RIR)[[1]](https://www.researchgate.net/profile/Emanuel_Habets/publication/259991276_Room_Impulse_Response_Generator/links/5800ea5808ae1d2d72eae2a0/Room-Impulse-Response-Generator.pdf), $n$ is additive noise signal, and $x$ is microphone pickup signal, the noisy signal. 
-Speech enhancement system is trying to get rid of the influence of $n$ (additive noise), while speech dereverberation system is trying to get rid of the influence of $r$ (reverberation).  
+*x = r * s + n*  
+*s* is speech signal (desired), *r* is room impulse response (RIR)[[1]](https://www.researchgate.net/profile/Emanuel_Habets/publication/259991276_Room_Impulse_Response_Generator/links/5800ea5808ae1d2d72eae2a0/Room-Impulse-Response-Generator.pdf), *n* is additive noise signal, and *x* is microphone pickup signal, the noisy signal. 
+Speech enhancement system is trying to get rid of the influence of *n* (additive noise), while speech dereverberation system is trying to get rid of the influence of *r* (reverberation).  
 
 Besides, some people think that it is necessary to remove the additive noise and reverberation[[2]](http://web.cse.ohio-state.edu/~wang.77/papers/HWWWMZ.taslp15.pdf) at the same time, but others think it is necessary to remove them separately[[3]](http://150.162.46.34:8080/icassp2017/pdfs/0005580.pdf). Therefore, there is no definite conclusion at present. But I prefer to remove additive noise and reverberation separately (`Personal opinion, for reference only`). 
 
