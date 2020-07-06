@@ -23,10 +23,13 @@ A lot of my summary is not very good, I hope you put forward corrections!
 || ------------------ 3.2.5 Post-processing module  
 || ------------ 3.3 Frequency domain speech enhancement (Multi-channel)  
 || ------------ 3.4 Time domain speech enhancement  
+|| ------------------ 3.4.1 Why use FCN (CNN) in time-domain  
+|| ------------------ 3.4.2 Neural network structure  
+|| ------------------ 3.4.3 Loss function  
 || ------ 4. Public datasets  
 || ------ 5. Performance comparison  
 || ------ 6. Future trends  
-|| ------ 7. Speech signal processing group for worthy attention 
+|| ------ 7. Speech signal processing group for worthy attention  
 || ------ 8. Acknowledge  
 
 
