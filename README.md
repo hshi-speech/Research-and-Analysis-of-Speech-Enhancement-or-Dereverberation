@@ -7,9 +7,7 @@ A lot of my summary is not very good, I hope you put forward corrections!
 >If you have a better way, please contact me!  
 >Thank you!  
 
-`
-My email: hshi.cca@gmail.com, hshi_cca@tju.edu.cn (I will not be able to use this email after Jan. 2021!)
-`
+>`My email: hshi.cca@gmail.com, hshi_cca@tju.edu.cn (I will not be able to use this email after Jan. 2021!)`
 
 ## 0. Outlines
 || ------ 1. Overviews  
