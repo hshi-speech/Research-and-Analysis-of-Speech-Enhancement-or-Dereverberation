@@ -242,10 +242,11 @@ By summing the signals of multiple systems in a certain proportion, the gain eff
 
 #### 3.2.6 Combined with traditional speech enhancement  
 * Combined with minimum mean-square error (MMSE)[[47]](https://maxwell.ict.griffith.edu.au/spl/publications/papers/spcom19_aaron_deep.pdf). 
+* Combined with weighted prediction error (WPE, dereverberation) [[49]](https://pdfs.semanticscholar.org/2b5f/e0dceaf84e0ad0d2f06ce4a9865f065a6f63.pdf).  
 
 <b>References:</b>  
 [47] [A. Nicolson, K. K. Paliwal. Deep learning for minimum mean-square error approaches to speech enhancement[J]. Speech Communication, 2019, 111: 44-55.](https://maxwell.ict.griffith.edu.au/spl/publications/papers/spcom19_aaron_deep.pdf)  
-
+[49] [K. Kinoshita, M. Delcroix, H. Kwon, et al. Neural Network-Based Spectrum Estimation for Online WPE Dereverberation[C]//Interspeech. 2017: 384-388.](https://pdfs.semanticscholar.org/2b5f/e0dceaf84e0ad0d2f06ce4a9865f065a6f63.pdf)  
 
 ### 3.3 Frequency domain speech enhancement (Multi-channel)   
 
