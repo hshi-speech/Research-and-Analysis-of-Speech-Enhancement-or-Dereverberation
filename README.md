@@ -30,7 +30,7 @@ A lot of my summary is not very good, I hope you put forward corrections!
 || ------ 4. Public datasets  
 || ------ 5. Performance comparison  
 || ------ 6. Future trends  
-|| ------ 7. Speech signal processing group for worthy attention  
+|| ------ 7. Tools  
 || ------ 8. Acknowledge  
 
 
@@ -290,6 +290,7 @@ It is proved that FCN has more advantages than fully connected network in proces
 
 ## 6. Future trends  
 
+## 7. Tools  
 
 ## 8. Acknowledge  
 Up to now, in the course of one and a half years of study, I would like to thank my tutors, Prof. Wang (Longbiao Wang. Tianjin University, China.) and Li (Sheng Li. National Institute of Information and Communications Technology (NICT), Japan.), Prof. Dang (Jianwu Dang. Tianjin University, China.), and the senior brother of the laboratory doctor, Meng Ge (Tianjin University, China) for their guidance and care for me. 
