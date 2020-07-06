@@ -198,7 +198,7 @@ The combination of enhancement task and other tasks can enhance each other.
 * The phonetic posteriorgrams (PPG) shows a certain correlation with enhancement[[35]](https://ieeexplore.ieee.org/abstract/document/9054334).  
 
 <b>Combined with other information</b>  
-By adding visual information to enhance enhanced performance[[37]](https://arxiv.org/pdf/1804.04121.pdf).  
+* By adding visual information to enhance enhanced performance[[37]](https://arxiv.org/pdf/1804.04121.pdf).  
 
 <b>References:</b>   
 [19] [S. R. Park, J. Lee. A fully convolutional neural network for speech enhancement[J]. arXiv preprint arXiv:1609.07132, 2016.](https://arxiv.org/pdf/1609.07132.pdf)  
