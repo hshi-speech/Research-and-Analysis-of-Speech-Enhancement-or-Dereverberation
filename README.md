@@ -97,11 +97,13 @@ The input feature is very important to the learning of neural network.
 * Moreover, in the way of multi-target learning (MTL) and combining various features, e.g., <b>mel-frequency cepstral coefficients (MFCC)</b>, as input and output, the network can also achieve good results[[7]](https://arxiv.org/pdf/1703.07172.pdf).  
 
 <b>Learning Targets</b>  
-Using the nonlinear mapping ability of neural network, we can map the spectrum directly, which is called <b>mapping</b> approach. 
-Masking approach is another common learning targets for speech enhancement. 
-<b>Ideal binary mask (IBM)</b>[[9]](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4293540/) and <b>ideal ratio mask (IRM)</b>[[9]](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4293540/) are common masking approaches based on the computational auditory scene analysis (CASA)[[8]](https://ieeexplore.ieee.org/document/4429320?denied=) theory.  
+* Using the nonlinear mapping ability of neural network, we can map the spectrum directly, which is called <b>mapping</b> approach. 
+* Masking approach is another common learning targets for speech enhancement. 
+ * <b>Ideal binary mask (IBM)</b>[[9]](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4293540/) and 
+ * <b>ideal ratio mask (IRM)</b>[[9]](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4293540/) are common masking approaches based on the computational auditory scene analysis (CASA)[[8]](https://ieeexplore.ieee.org/document/4429320?denied=) theory.  
 
-Besides, considering the influence of phase to speech enhancement, the <b>complex ideal ratio mask (cIRM)</b>[[10]](http://homes.sice.indiana.edu/williads/publication_files/williamsonetal.cRM.ICASSP2016.pdf) and the <b>phase-sensitive spectrum approximation (PSA)</b>[[11]](https://merl.com/publications/docs/TR2015-031.pdf) are also proposed and used.  
+ * Besides, considering the influence of phase to speech enhancement, the <b>complex ideal ratio mask (cIRM)</b>[[10]](http://homes.sice.indiana.edu/williads/publication_files/williamsonetal.cRM.ICASSP2016.pdf) and 
+ * the <b>phase-sensitive spectrum approximation (PSA)</b>[[11]](https://merl.com/publications/docs/TR2015-031.pdf) are also proposed and used.  
 
 <b>Other Feature Processing</b>  
 In addition to Fourier transform, other transform methods, such as Z-transform, will also be used in feature extraction of speech enhancement. 
