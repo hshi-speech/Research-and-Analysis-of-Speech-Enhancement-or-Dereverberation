@@ -91,9 +91,10 @@ I will show you how to improve the frequency domain speech enhancement algorithm
 #### 3.2.1 Feature extraction module  
 <b>Input Feature</b>  
 The input feature is very important to the learning of neural network. 
-<b>Mel frequency power spectrum (MFP)</b> was used for speech enhancement in INTERSPEECH 2013 [[5]](https://bio-asplab.citi.sinica.edu.tw/paper/conference/lu2013speech.pdf). 
-At present, the most common feature is <b>the magnitude of spectrogram</b>. <b>Log processing of the magnitude of spectrogram</b>[[6]](http://staff.ustc.edu.cn/~jundu/Publications/publications/SPL2014_Xu.pdf) is more suitable for human hearing. 
-Moreover, in the way of multi-target learning (MTL) and combining various features, e.g., <b>mel-frequency cepstral coefficients (MFCC)</b>, as input and output, the network can also achieve good results[[7]](https://arxiv.org/pdf/1703.07172.pdf).  
+* <b>Mel frequency power spectrum (MFP)</b> was used for speech enhancement in INTERSPEECH 2013 [[5]](https://bio-asplab.citi.sinica.edu.tw/paper/conference/lu2013speech.pdf). 
+* At present, the most common feature is <b>the magnitude of spectrogram</b>. 
+* <b>Log processing of the magnitude of spectrogram</b>[[6]](http://staff.ustc.edu.cn/~jundu/Publications/publications/SPL2014_Xu.pdf) is more suitable for human hearing. 
+* Moreover, in the way of multi-target learning (MTL) and combining various features, e.g., <b>mel-frequency cepstral coefficients (MFCC)</b>, as input and output, the network can also achieve good results[[7]](https://arxiv.org/pdf/1703.07172.pdf).  
 
 <b>Learning Targets</b>  
 Using the nonlinear mapping ability of neural network, we can map the spectrum directly, which is called <b>mapping</b> approach. 
