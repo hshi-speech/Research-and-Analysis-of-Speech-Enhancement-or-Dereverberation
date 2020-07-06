@@ -233,9 +233,10 @@ The combination of enhancement task and other tasks can enhance each other.
 [44] [Z. Meng, J. Li, Y. Gong. Cycle-consistent speech enhancement[J]. arXiv preprint arXiv:1809.02253, 2018.](https://arxiv.org/pdf/1809.02253.pdf)  
 
 #### 3.2.5 Post-processing module
-
+By summing the signals of multiple systems in a certain proportion, the gain effect can be obtained[[46]](https://www.researchgate.net/profile/Ivan_Tashev/publication/327814608_A_Hybrid_Approach_to_Combining_Conventional_and_Deep_Learning_Techniques_for_Single-Channel_Speech_Enhancement_and_Recognition/links/5bcfd2a692851c1816bc888f/A-Hybrid-Approach-to-Combining-Conventional-and-Deep-Learning-Techniques-for-Single-Channel-Speech-Enhancement-and-Recognition.pdf).  
 
 <b>References:</b>  
+[46] [Y. Tu, I. Tashev, S. Zarar, et al. A hybrid approach to combining conventional and deep learning techniques for single-channel speech enhancement and recognition[C]//2018 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP). IEEE, 2018: 2531-2535.](https://www.researchgate.net/profile/Ivan_Tashev/publication/327814608_A_Hybrid_Approach_to_Combining_Conventional_and_Deep_Learning_Techniques_for_Single-Channel_Speech_Enhancement_and_Recognition/links/5bcfd2a692851c1816bc888f/A-Hybrid-Approach-to-Combining-Conventional-and-Deep-Learning-Techniques-for-Single-Channel-Speech-Enhancement-and-Recognition.pdf)  
 
 ### 3.3 Frequency domain speech enhancement (Multi-channel)   
 
@@ -253,10 +254,11 @@ It is proved that FCN has more advantages than fully connected network in proces
 
 #### 3.4.2 Neural network structure
 * SEGAN[[43]](https://arxiv.org/pdf/1703.09452.pdf).  
+* TCNN[[45]](https://web.cse.ohio-state.edu/~wang.77/papers/Pandey-Wang1.icassp19.pdf).  
 
 <b>References:</b>  
 [43] [S. Pascual, A. Bonafonte, J. Serra. SEGAN: Speech enhancement generative adversarial network[J]. arXiv preprint arXiv:1703.09452, 2017.](https://arxiv.org/pdf/1703.09452.pdf)  
-
+[45] [A. Pandey, D. Wang. TCNN: Temporal convolutional neural network for real-time speech enhancement in the time domain[C]//ICASSP 2019-2019 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP). IEEE, 2019: 6875-6879.](https://web.cse.ohio-state.edu/~wang.77/papers/Pandey-Wang1.icassp19.pdf)  
 
 #### 3.4.3 Loss function
 * Loss in frequency domain[[42]](https://ashutosh620.github.io/files/AECNN_INTERSPEECH_2018.pdf).  
