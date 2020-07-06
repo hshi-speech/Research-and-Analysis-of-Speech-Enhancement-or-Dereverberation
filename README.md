@@ -106,9 +106,10 @@ The input feature is very important to the learning of neural network.
  * the <b>phase-sensitive spectrum approximation (PSA)</b>[[11]](https://merl.com/publications/docs/TR2015-031.pdf) are also proposed and used.  
 
 <b>Other Feature Processing</b>  
-In addition to Fourier transform, other transform methods, such as Z-transform, will also be used in feature extraction of speech enhancement. 
-Different filter banks have great influence on feature extraction. 
-Whether to normalize the features, and how to normalize the features, especially for those MTL models, I will sort them out and improve them in the future work!  
+* In addition to Fourier transform (FT), 
+* other transform methods, such as Z-transform, will also be used in feature extraction of speech enhancement. 
+* Different filter banks have great influence on feature extraction. 
+* Whether to normalize the features, and how to normalize the features, especially for those MTL models, I will sort them out and improve them in the future work!  
 
 <b>References:</b>  
 [5] [X. Lu, Y. Tsao, S. Matsuda, et al. Speech enhancement based on deep denoising autoencoder[C]//Interspeech. 2013, 2013: 436-440.](https://bio-asplab.citi.sinica.edu.tw/paper/conference/lu2013speech.pdf)  
