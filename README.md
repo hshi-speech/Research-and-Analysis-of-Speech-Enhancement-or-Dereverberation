@@ -10,18 +10,19 @@ A lot of my summary is not very good, I hope you put forward corrections!
 
 ## 0. Outlines
 || ------ 1. Overviews  
-|| ------------ 1.1 What is speech enhancement (dereverberation)  
-|| ------------ 1.2 Classification of speech enhancement (dereverberation)  
-|| ------ 2. Traditional speech enhancement or dereverberation methods (I will show this part in the future.)  
-|| ------ 3. Deep learning-based speech enhancement (dereverberation) methods  
+|| ------------ 1.1 What is speech enhancement  
+|| ------------ 1.2 Classification of speech enhancement   
+|| ------ 2. Traditional speech enhancement methods (I will show this part in the future.)  
+|| ------ 3. Deep learning-based speech enhancement methods  
 || ------------ 3.1 Basic framework  
-|| ------------ 3.2 Frequency domain speech enhancement (dereverberation)  
+|| ------------ 3.2 Frequency domain speech enhancement (Monaural)  
 || ------------------ 3.2.1 Feature extraction module  
 || ------------------ 3.2.2 Inputs module  
 || ------------------ 3.2.3 Phase module  
 || ------------------ 3.2.4 Enhancement module  
 || ------------------ 3.2.5 Post-processing module  
-|| ------------ 3.3 Time domain speech enhancement (dereverberation)  
+|| ------------ 3.3 Frequency domain speech enhancement (Multi-channel)  
+|| ------------ 3.4 Time domain speech enhancement  
 || ------ 4. Public datasets  
 || ------ 5. Performance comparison  
 || ------ 6. Future trends  
@@ -83,7 +84,7 @@ That is because I feel that the current speech enhancement, we are generally imp
 Everyone's classification is different. Here I will sort it out according to my ideas. In many papers, the improved model may have more than one module. Here I only focus on the most important improvement in these papers to classify. 
 I have been focusing on speech enhancement for about a year and a half. Of course, there are some models that I have not paid attention to. Please put forward your correction by email.  
 
-### 3.2 Frequency domain speech enhancement (dereverberation)  
+### 3.2 Frequency domain speech enhancement (Monaural)  
 The speech enhancement algorithm in frequency domain is more perfect than that in time domain. 
 I divide it into five modules. 
 I will show you how to improve the frequency domain speech enhancement algorithm from these five parts.  
@@ -227,16 +228,20 @@ The combination of enhancement task and other tasks can enhance each other.
 
 <b>References:</b>  
 
-### 3.2 Time domain speech enhancement (dereverberation)  
+### 3.3 Frequency domain speech enhancement (Multi-channel)   
+
+
+
+### 3.4 Time domain speech enhancement (dereverberation)  
 Time domain speech enhancement can enhance the time domain speech waveform signal in the form of end-to-end because it does not need to consider the characteristics and can bypass the phase problem. Moreover, in many literatures, I found that the time domain speech enhancement basically uses convolutional neural network (CNN) or fully convolutional neural network (FCN) as the network structure. 
 
-#### 3.2.1 Why use FCN (CNN) in time-domain
+#### 3.4.1 Why use FCN (CNN) in time-domain
 
 
-#### 3.2.2 Neural network structure
+#### 3.4.2 Neural network structure
 
 
-#### 3.2.3 Loss function
+#### 3.4.3 Loss function
 
 
 <b>References:</b>  
