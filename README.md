@@ -224,7 +224,15 @@ The combination of enhancement task and other tasks can enhance each other.
 <b>References:</b>  
 
 ### 3.2 Time domain speech enhancement (dereverberation)  
+Time domain speech enhancement can enhance the time domain speech waveform signal in the form of end-to-end because it does not need to consider the characteristics and can bypass the phase problem. Moreover, in many literatures, I found that the time domain speech enhancement basically uses convolutional neural network (CNN) or fully convolutional neural network (FCN) as the network structure. 
 
+#### 3.2.1 Why use FCN (CNN) in time-domain
+
+
+#### 3.2.2 Neural network structure
+
+
+#### 3.2.3 Loss function
 
 
 <b>References:</b>  
